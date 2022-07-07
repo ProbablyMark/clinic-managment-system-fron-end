@@ -1,1 +1,5 @@
-<p>header</p>
+<p-tabMenu styleClass="cust-menu" [model]="items">
+  <ng-template pTemplate="item" let-item let-i="index">
+    {{ item.label }}
+  </ng-template>
+</p-tabMenu>

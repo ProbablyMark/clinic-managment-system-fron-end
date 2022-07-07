@@ -1,1 +1,4 @@
- 
+.cust-menu .p-tabmenu,
+.p-menuitem-link {
+  border: none !important;
+}

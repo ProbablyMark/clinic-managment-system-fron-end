@@ -3,13 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-default-calendar',
   templateUrl: './default-calendar.component.html',
-  styleUrls: ['./default-calendar.component.css']
+  styleUrls: ['./default-calendar.component.css'],
 })
 export class DefaultCalendarComponent implements OnInit {
+  value: Date | undefined;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

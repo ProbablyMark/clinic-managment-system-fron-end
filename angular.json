@@ -50,7 +50,7 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "node_modules/primeicons/primeicons.css",
-
+              "node_modules/primeng/resources/themes/mdc-light-indigo/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
 
               "src/styles.css"
@@ -123,5 +123,7 @@
       }
     }
   },
-  "defaultProject": "angularProject"
+  "cli": {
+    "analytics": false
+  }
 }

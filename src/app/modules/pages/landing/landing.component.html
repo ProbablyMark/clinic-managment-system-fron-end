@@ -1,1 +1,10 @@
-<p>landing works!</p>
+<div class="card-container col-12 d-flex justify-content-around">
+  <p-card (click)="checkUser()" styleClass="col-12">
+    Looking for a doctor
+  </p-card>
+  <p-card styleClass="col-12"> Looking for a prescription</p-card>
+
+  <p-card styleClass="col-12"> Manage your appointments</p-card>
+</div>
+
+<app-login-signup [display]="userLoggedIn"></app-login-signup>

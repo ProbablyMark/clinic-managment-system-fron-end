@@ -5,9 +5,11 @@ import { DefaultDropDownComponent } from './default-drop-down/default-drop-down.
 import { DefaultTableComponent } from './default-table/default-table.component';
 import { DefaultSearchComponent } from './default-search/default-search.component';
 import { DefaultCalendarComponent } from './default-calendar/default-calendar.component';
-
-import { MenubarModule } from 'primeng/menubar';
-import { MenuItem } from 'primeng/api';
+import { TabMenuModule } from 'primeng/tabmenu';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { CalendarModule } from 'primeng/calendar';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     DefaultBtnComponent,
@@ -16,7 +18,7 @@ import { MenuItem } from 'primeng/api';
     DefaultSearchComponent,
     DefaultCalendarComponent,
   ],
-  imports: [CommonModule, MenubarModule],
-  exports: [MenubarModule],
+  imports: [CommonModule, CalendarModule, CardModule, FormsModule],
+  exports: [ButtonModule, TabMenuModule, CardModule, CalendarModule],
 })
-export class SharedModule {}
+export class SharedUiModule {}
